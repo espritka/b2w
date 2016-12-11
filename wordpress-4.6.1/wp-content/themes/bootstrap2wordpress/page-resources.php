@@ -12,7 +12,7 @@ $thumbnail_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
 <?php if( has_post_thumbnail() ) { // check for feature image ?>
 
   <section class="feature-image" style="background: url('<?php echo $thumbnail_url; ?>') no repeat; background-size: cover;" data-type="background" data-speed="4">
-    <h1><?php the_title(); ?></h1>
+    <h1 class="page-title"><?php the_title(); ?></h1>
   </section>
 
 <?php } else { //fallback imgae ?>
